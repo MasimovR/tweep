@@ -38,8 +38,8 @@ async def getUrl(init):
     if arg.s != None:
         arg.s = arg.s.replace(" ", "%20").replace("#", "%23")
         url+= "%20{0.s}".format(arg)
-    if arg.year != None:
-        url+= "%20until%3A{0.year}-1-1".format(arg)
+    if arg.until != None:
+        url+= "%20until%3A{0.until}".format(arg)
     if arg.since != None:
         url+= "%20since%3A{0.since}".format(arg)
     if arg.fruit:
