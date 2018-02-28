@@ -275,7 +275,7 @@ if __name__ == "__main__":
     ap.add_argument("-s", help="Search for Tweets containing this word or phrase.")
     ap.add_argument("-o", help="Save output to a file.")
     ap.add_argument("-g", help="Search for geocoded tweets.")
-    ap.add_argument("--year", help="Filter Tweets before specified year.")
+    ap.add_argument("--until", help="Filter Tweets before specified date.")
     ap.add_argument("--since", help="Filter Tweets sent since date (Example: 2017-12-27).")
     ap.add_argument("--fruit", help="Display 'low-hanging-fruit' Tweets.", action="store_true")
     ap.add_argument("--tweets", help="Display Tweets only.", action="store_true")
