@@ -24,10 +24,10 @@ async def getUrl(init):
     Todo: Make everything URL encoded at the end.
     '''
     if init == -1:
-        url = "https://twitter.com/search?f=tweets&vertical=default&lang=en&q="
+        url = "https://twitter.com/search?f=tweets&vertical=default&l=en&lang=en&q="
     else:
         url = "https://twitter.com/i/search/timeline?f=tweets&vertical=default"
-        url+= "&lang=en&include_available_features=1&include_entities=1&reset_"
+        url+= "&l=en&lang=en&include_available_features=1&include_entities=1&reset_"
         url+= "error_state=false&src=typd&max_position={}&q=".format(init)
 
     if arg.u != None:
